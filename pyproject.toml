@@ -1,0 +1,25 @@
+[project]
+name = "solar_energy_advisor"
+version = "0.1.0"
+description = "solar_energy_advisor using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai>=0.152.0,<1.0.0",
+    "streamlit",
+    "python-dotenv"
+]
+
+[project.scripts]
+solar_energy_advisor = "solar_energy_advisor.main:run"
+run_crew = "solar_energy_advisor.main:run"
+train = "solar_energy_advisor.main:train"
+replay = "solar_energy_advisor.main:replay"
+test = "solar_energy_advisor.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

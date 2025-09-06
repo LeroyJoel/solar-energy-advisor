@@ -1,0 +1,41 @@
+assess_energy_needs_task:
+  description: >
+    Calculate estimated daily and monthly energy usage based on appliances
+    used in a Nigerian household or business. List power ratings and total load.
+  expected_output: >
+    A summary of appliances, estimated kVA load, and daily kWh consumption.
+  agent: energy_needs_assessor
+
+recommend_solar_system_task:
+  description: >
+    Based on the load assessment, recommend a solar inverter size (kVA),
+    number of batteries, and solar panels required.
+  expected_output: >
+    A recommended solar system design (inverter capacity, battery bank,
+    number of solar panels, and installation notes).
+  agent: solar_system_recommender
+
+calculate_costs_task:
+  description: >
+    Estimate system cost in Nigerian Naira (₦) including inverter,
+    batteries, panels, and installation. Suggest affordable financing
+    methods like cooperative loans, bank loans, or pay-as-you-go providers.
+  expected_output: >
+    A cost breakdown in ₦, financing options, and repayment plan examples.
+  agent: cost_financing_advisor
+
+generate_solar_report_task:
+  description: >
+    Combine the energy needs, system recommendation, and cost breakdown
+    into a simple solar energy advisory report. Include a comparison
+    with generator use (fuel cost per month).
+  expected_output: >
+    A Solar Advisory Report with:
+    - Estimated load (kVA)
+    - Recommended system design
+    - Total cost in ₦
+    - Financing options
+    - Generator vs. solar cost comparison
+    - Final recommendation
+  agent: solar_report_generator
+
