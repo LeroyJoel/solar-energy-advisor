@@ -72,7 +72,7 @@ This solution directly addresses Nigeria’s energy poverty challenge by making 
 
 ⚙️ Installation & Setup
 1. Clone the Repository
-git clone https://github.com/your-username/solar-energy-advisor-crew.git
+git clone https://github.com/LeroyJoel/solar-energy-advisor
 cd solar-energy-advisor-crew
 
 2. Install Dependencies
